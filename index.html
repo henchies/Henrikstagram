@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Depth Map Extractor</title>
+
+    <script type="text/javascript">
+        window.fnInitQueue = [];
+    </script>
+
+</head>
+
+<body style="padding: 0px; margin: 0px; background-color: #e2e2e2;">
+
+    <div style="margin: 0 auto; max-width: 600px;">
+        <style>
+            .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .inputfile+label,
+            #processing_box {
+                max-width: 80%;
+                padding: 12px 40px 10px 40px;
+                font-size: 1.0em;
+                font-weight: 700;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                cursor: pointer;
+                display: inline-block;
+                overflow: hidden;
+                color: #f1e5e6;
+                background-color: green;
+                box-sizing: border-box;
+            }
+
+            .inputfile+label svg {
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                margin-top: -0.25em;
+                margin-right: 0.25em;
+            }
+        </style>
+
+        <div style="padding-left: 20px; padding-right: 20px;">
+
+            <div style="text-align: center;">
+                <h1>Depth Map Extractor</h1>
+            </div>
+
+            <div>
+                <p align="justify">Automatically extract the depth map from your <strong>iPhone</strong>,
+                    <strong>Samsung Galaxy</strong>, <strong>Google Pixel</strong>, <strong>Huawei</strong>,
+                    <strong>Honor</strong>, <strong>LG</strong>, <strong>Xiaomi</strong>, <strong>Pocophone</strong>,
+                    <strong>Nokia</strong>, <strong>Meizu</strong>, <strong>Vivo</strong> or <strong>Nubia</strong>
+                    photos. </p>
+                <br>
+
+                <div style="border: 1px dotted #808080; padding: 20px; border-radius: 16px;">
+
+                    <p><b>1)</b> Take a <strong>Portrait Mode</strong> image from your mobile.</p>
+                    <p><b>2)</b> Select the image file using the button below.</p>
+
+                    <form id="file-form">
+
+                        <div id="input_box" style="display: block;">
+                            <input type="file" id="file" name="file" class="inputfile">
+                            <label for="file">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                    <path
+                                        d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+                                        style="fill: currentColor;"></path>
+                                </svg>
+                                <span>Browse a file…</span>
+                            </label>
+                        </div>
+
+                        <div id="processing_box" style="display: none;">Processing</div>
+
+                    </form>
+
+                    <p><b>3)</b> Your depth map and original image will be automatically downloaded as a .zip file.</p>
+                    <p><b>4)</b> Extract your zip file. Drag and drop the two files into Facebook Status box. <br></p>
+                </div>
+            </div>
+
+            <br>
+            <br><br>
+            <hr style="border-color: #f7f7f7; background-color: #f7f7f7; color: #f7f7f7">
+            <div style="text-align: center;"><small><a href="http://www.hasaranga.com">www.hasaranga.com</a></small>
+            </div>
+        </div>
+    </div>
+
+    <script src="files/base64js-544f165fdd51f15696cafe627670e93df097805cb861888145dc.js"></script>
+    <script src="files/jpegdecode-9b114d0a51b2728399297f20ce9bb05e6290d4b943af5a06ca.js"></script>
+    <script src="files/jpegencode-30e058476c3b8be73e2180315f05bcd86f7ffafff084ead8c4.js"></script>
+    <script src="files/jszip.js"></script>
+    <script src="files/FileSaver.js"></script>
+    <script src="files/Buffer-bfcecf2439ea53f9986316c046c87fdcb2083f587212bbd8952de8.js"></script>
+    <script src="files/jpg-8388547d4460692c7f05406af34b7dd1a12606e180d90e4903f927e14.js"></script>
+    <script src="files/extractor-c48a5991b4b4d339bfbbd1e99271a9b0a50ab295a62e3190c73.js"></script>
+    <script>
+        initExtractor();
+    </script>
+
+
+
+</body>
+
+</html>
